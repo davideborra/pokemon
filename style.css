@@ -1,0 +1,120 @@
+body{
+    background: radial-gradient(rgb(78,127,286), rgb(96,169,208));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Helvetica Neue", sans-serif;
+    color: rgb(255,255,255,0.9);
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+
+.rental{
+    /*border: 2px solid black;*/
+    height: 45rem;
+    width: 80rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items:center;
+}
+
+.pokemon{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 30%;
+    width: 48%;
+    border-radius: 0.5rem;
+    display: flex;
+}
+
+.infos{
+    height: 80%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    padding-right: 0.5rem;
+    white-space: nowrap;
+    overflow-x: visible;
+}
+
+.name{
+    width: 50%;
+    height: 30%;
+    font-size: 1.8rem;
+}
+.level{
+    width: 50%;
+    height: 20%;
+}
+.ability{
+    width: 50%;
+    height: 20%;
+    padding-top: 8px;
+}
+.object{
+    width: 50%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+.types{
+    text-align: right;
+}
+.movetype{
+    width: 40%;
+    height: 10%;
+    text-align: right;
+}
+img.tera{
+    height: 2.3rem;
+    width: auto;
+    border-left: 2px solid rgba(255, 255, 255, 0.3);
+    padding-left: 0.1rem;
+}
+img.type{
+    height: 2rem;
+    width: auto;
+    padding: 0.2rem;
+}
+img.object{
+    height: 2.3rem;
+    width: auto;
+    margin-right: 0.5rem;
+}
+.img{
+    width: 40%;
+    height: 25%;
+}
+
+img.sprite{
+    float: inline-end;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 0.5rem;
+}
+
+.moves{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    height: 80%;
+    width: 45%;
+    border-left: 3px solid rgba(255, 255, 255, 0.3);
+    padding-left: 1rem;
+}
+
+li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 25%;
+}
+img.movetype{
+    height: 2rem;
+    width: auto;
+    margin-right: 0.5rem;
+}
+

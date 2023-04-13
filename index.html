@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Pokémon Team Viewer</title>
+        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+        <script src="https://kit.fontawesome.com/d2ab5b4e79.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+        <link rel="shortcut icon" href="sprites/pm1084_00_00_00_big_placeholder.png">
+    </head>
+
+    <body>
+        <div id="vueContainer">
+        <div class="rental">
+            <div class="pokemon" v-for="pokemon in team">
+                <div class="infos">
+                    <div class="name">{{pokemon.name}}</div>
+                    <div class="level">Lv. {{pokemon.level}}   {{pokemon.sex}}</div>
+                    <div class="ability">{{pokemon.ability}}</div>
+                    <div class="object"><!--<img class="object" src="items/berries/sitrus-berry.png">--><div>{{pokemon.item}}</div></div>
+                    <div class="types"><img v-for="element in pokemon.types" class="type" :src="type(element)"><img class="tera" :src="teratype(pokemon)"></div>
+                    <div class="img"> <img class="sprite" :src="pokemon.sprite"></div>
+                </div>
+                <ul class="moves">
+                    <li v-for="move in pokemon.moves"><img class="movetype" :src="type(move.type)"><div>{{move.name}}</div></li>
+                </ul>
+            </div>
+            
+        </div>
+        <script src="script.js"></script>
+    </div>
+    </body>
+</html> 
