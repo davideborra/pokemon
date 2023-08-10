@@ -1,5 +1,6 @@
 body{
-    background: radial-gradient(rgb(78,127,286), rgb(96,169,208));
+    /*background: radial-gradient(rgb(78,127,286), rgb(96,169,208));*/
+    background: url(pattern.png);
     display: flex;
     align-items: center;
     justify-content: center;
